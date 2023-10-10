@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Man</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <ul>
+          <li class="nav_item">
+            <a href="#" class="active">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">FAQs</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">About</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="nav_item">
+            <a href="#">Help</a>
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <h1>Password Mannager</h1>
+        <hr />
+        <h2>Where Passwords Find Their Safe Haven</h2>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Website</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Copy/Delete</th>
+            </tr>
+            <tr>
+              <td>example.com</td>
+              <td>user123</td>
+              <td>*********</td>
+              <td>
+                <span class="material-symbols-outlined Copy">
+                  content_copy </span
+                ><span class="material-symbols-outlined delete"> delete </span>
+              </td>
+            </tr>
+            <tr>
+              <td>sample.com</td>
+              <td>john_doe</td>
+              <td>*********</td>
+              <td>
+                <span class="material-symbols-outlined Copy">
+                  content_copy </span
+                ><span class="material-symbols-outlined delete"> delete </span>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </table>
+        </div>
+        <div class="add" onclick="myfunction()"><span class="material-symbols-outlined">
+            add
+            </span></div>
+      </div>
+    </div>
+    <div class="add_pass">
+
+        <div class="wrapper">
+            <span class="close-btn material-symbols-outlined" onclick="close_func()">
+                close
+                </span>
+            <form action="">
+            <h1>Add Password</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required><span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required><span class="material-symbols-outlined">
+                    mail
+                </span>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required><span class="material-symbols-outlined">
+                    lock
+                </span>
+            </div>
+            <button type="submit" class="btn">submit</button>
+            
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
